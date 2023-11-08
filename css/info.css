@@ -1,4 +1,4 @@
-.bg-title{
+.bg-title {
     display: flex;
     height: 50px;
     align-items: center;
@@ -6,51 +6,60 @@
     padding: 10px;
 }
 
-.box{
+.box {
     width: 100px;
     height: 100px;
-    margin: 1px; 
+    margin: 1px;
     padding: 10px;
 }
 
-.box h1, .box h3{
+.box h1,
+.box h3 {
     color: white;
 }
 
-.background{
+.background {
     width: 100%;
     background-color: lightblue;
     padding: 30px;
- }
+}
 
-.cart-table{
+.background>p{
     width: 100%;
     max-width: 700px;
+    margin: auto;
+   
+}
+
+.cart-table {
+    width: 100%;
+    max-width:1000px;
     margin: auto;
     background-color: white;
     border-radius: 10px;
     border-collapse: collapse;
 }
 
-.cart-table td, .cart-table th{
+.cart-table td,
+.cart-table th {
     padding: 15px;
     border-bottom: 1px solid lightblue;
 }
 
-.cell-long{
+.cell-long {
     width: 700px;
 }
 
-.edit-cart{
+.edit-cart {
     width: 50%;
     max-width: 350px;
-    padding: 10px;
+    padding: 20px;
     padding-top: 0px;
     margin: auto;
     float: left;
 }
 
-.method button{
+.method button {
     width: 200px;
     background-color: blueviolet;
     border: none;
@@ -61,6 +70,13 @@
     cursor: pointer;
 }
 
-.method button:hover{
+.method button:hover {
     background-color: aliceblue;
+}
+
+@media screen and (max-width: 1200px){
+    .main-title{
+        font-size: 30px;
+    }
+     
 }
