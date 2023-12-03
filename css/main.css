@@ -4,9 +4,15 @@
     padding: 80px 120px 80px 120px;
 }
 
-.card-body{
-    padding: 20px;
+.card-title{
+    margin-top: 20px;
 }
+
+.card-body{
+    padding: 30px 20px 30px 20px;
+}
+
+
 
 .gps{
     margin-top: -15px;
@@ -22,9 +28,74 @@
     background-color:  #6fbaf8;
     color: white;
 }
+
+.vr{
+    height: 14rem;
+}
 .info{
     margin: 50px 30px 30px 30px;
 }
 .info h4{
-    font-weight:600
+    font-weight:500
 }
+
+.line{
+    margin: 20px 0px 10px 0px;
+}
+
+.line-1st{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.line-2nd{
+    float: left;
+    width: 80%;
+    text-align: center;
+    color: rgb(173, 173, 173);
+}
+
+.line-2nd>p{
+    color: #f7f9fc;
+}
+
+.placeholder:hover{
+    cursor: default;
+}
+
+.box{
+    margin-top: 30px;
+}
+
+.main{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.badge{
+    color: black;
+}
+
+.skill{
+    font-size: 19.5px;
+}
+
+.blue{
+    color: #038dfe;
+}
+
+.box2{
+    text-align: center;
+}
+
+.box2>i{
+font-size: 100px;
+}
+
+@media screen and (max-width : 768px) { 
+    .vr { 
+        width: 0px;
+        height: 0px;
+    } 
+  }
