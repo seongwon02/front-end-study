@@ -1,8 +1,9 @@
 body {
   margin: 0;
+  min-width: 1340px;
 }
 
-p {
+p, h4 {
   margin: 0;
 }
 
@@ -17,10 +18,12 @@ div {
   background: #494BB4;
   text-align: center;
   padding: 15px 0px 15px 0px;
+  transition: all 1s;
 }
 
 .nav-box {
   margin: 25px 0px 25px 0px;
+  font-size: 20px;
   color: white;
 }
 
@@ -28,7 +31,7 @@ div {
   position: relative;
   left: 4%;
   width: 96%;
-  height: 700px;
+  height: 1000px;
   background-color: #FAFAFA;
 }
 
@@ -44,9 +47,10 @@ div {
   width: 253px;
   height: 43px;
   float: left;
+  transition: all 1s;
 }
 .search input {
-  width: 186px;
+  width: 73.5%;
   height: 20px;
   padding: 10px;
   border: solid #DCE5ED;
@@ -55,14 +59,18 @@ div {
   float: left;
 }
 .search button {
-  width: 44px;
+  width: 43px;
   height: 43px;
   color: #333940;
-  float: right;
+  float: left;
   border-radius: 0px 5px 5px 0px;
   border: none;
   background-color: #494BB4;
   color: white;
+}
+
+.search:hover {
+  width: 400px;
 }
 
 .header-box {
@@ -85,7 +93,7 @@ div {
 
 .section {
   width: 100%;
-  height: 500px;
+  height: 200px;
   padding: 10px 20px 10px 20px;
 }
 
@@ -101,16 +109,35 @@ div {
   padding: 30px 20px 30px 20px;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 3px 3px 3px 3px rgb(231, 231, 231);
+  box-shadow: 3px 3px 4px 4px rgb(231, 231, 231);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.box-skyblue {
+  border-left: solid #9AD6EE 5px;
+}
+
+.box-green {
+  border-left: solid #41C95A 5px;
+}
+
+.box-blue {
+  border-left: solid #4A4CB4 5px;
+}
+
+.box-yellow {
+  border-left: solid #FECE67 5px;
 }
 
 .dashboard-box-text {
   width: 75%;
   height: 100%;
   font-size: 20px;
+}
+.dashboard-box-text p {
+  color: #808080;
 }
 .dashboard-box-text h4 {
   margin-top: 15px;
@@ -124,4 +151,65 @@ div {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.section2 {
+  margin-top: 50px;
+  width: 100%;
+  height: 800px;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+}
+
+.card {
+  width: 50%;
+  height: 300px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 4px 4px rgb(231, 231, 231);
+  margin-right: 40px;
+}
+
+.card-title {
+  width: 100%;
+  height: 50px;
+  background-color: #FAFAFA;
+  border-radius: 5px 5px 0px 0px;
+  padding-left: 20px;
+  line-height: 50px;
+  border-bottom: solid #E6E6E6;
+}
+.card-title h4 {
+  font-size: 20px;
+}
+
+.card-content {
+  width: 100%;
+  padding: 30px;
+}
+
+.graph {
+  width: 65%;
+  height: 470px;
+}
+
+.task {
+  width: 35%;
+  height: 200px;
+}
+
+.grid-container {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50px 50px 50px;
+  grid-template-areas: "." "." ".";
+}
+.grid-container p {
+  padding-left: 20px;
+  line-height: 50px;
+}
+
+.grid-nav {
+  border-top: solid #E6E6E6 1px;
 }/*# sourceMappingURL=text.css.map */

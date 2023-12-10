@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/008a09360b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="text.css">
 </head>
+
 <body>
     <div class="nav">
         <div class="nav-box">
@@ -43,11 +44,12 @@
             </div>
             <div style="clear: both;"></div>
         </div>
+
         <div class="section">
             <div class="dashborad">
                 <h1>Dashboard</h1>
                 <div class="dashboard-container">
-                    <div class="dashboard-box">
+                    <div class="dashboard-box box-skyblue">
                         <div class="dashboard-box-text">
                             <p>Earning (Monthly)</p>
                             <h4>$400,000</h4>
@@ -55,8 +57,8 @@
                         <div class="dashboard-box-icon">
                             <i class="fa-solid fa-calendar"></i>
                         </div>
-                    </div>  
-                    <div class="dashboard-box">
+                    </div>
+                    <div class="dashboard-box box-green">
                         <div class="dashboard-box-text">
                             <p>Earnings(Annual)</p>
                             <h4>$800,000</h4>
@@ -64,8 +66,8 @@
                         <div class="dashboard-box-icon">
                             <i class="fa-solid fa-dollar-sign"></i>
                         </div>
-                    </div>  
-                    <div class="dashboard-box">
+                    </div>
+                    <div class="dashboard-box box-blue">
                         <div class="dashboard-box-text">
                             <p>Tasks</p>
                             <h4>13</h4>
@@ -73,8 +75,8 @@
                         <div class="dashboard-box-icon">
                             <i class="fa-solid fa-list-check"></i>
                         </div>
-                    </div>  
-                    <div class="dashboard-box">
+                    </div>
+                    <div class="dashboard-box box-yellow">
                         <div class="dashboard-box-text">
                             <p>Requests</p>
                             <h4>26</h4>
@@ -82,18 +84,67 @@
                         <div class="dashboard-box-icon">
                             <i class="fa-solid fa-comments"></i>
                         </div>
-                    </div>  
-                </div>
-            </div>
-            <div class="section-container">
-                <div class="overview">
-    
-                </div>
-                <div class="task">
-    
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="section2">
+            <div class="card graph">
+                <div class="card-title">
+                    <h4>Earnings Overview</h4>
+                </div>
+                <div class="card-content">
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="card task">
+                <div class="card-title">
+                    <h4>Tasks</h4>
+                </div>
+                <div class="card-content grid-container">
+                    <div class="grid-nav">
+                        <p>Borrowed Items</p>
+                    </div>
+                    <div class="grid-nav">
+                        <p>Trello requests</p>
+                    </div>
+                    <div class="grid-nav">
+                        <p>Marked Comments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'Monthly',
+                    data: [0, 10, 5, 3, 20, 30, 45],
+                    backgroundColor: '#4A4CB4',
+                    borderColor: '#4A4CB4',
+                    borderWidth: 1,
+                    fill: true,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
 </body>
+
 </html>
